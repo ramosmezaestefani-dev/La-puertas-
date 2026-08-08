@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El museo de las cosas que todavía no existen</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(160deg, #17152f, #263b55);
+    color: white;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 650px;
+    margin: auto;
+    padding: 22px;
+}
+
+.portada {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.icono {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.15;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+.subtitulo {
+    color: #d9d8ff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.tarjeta {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius: 24px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+}
+
+.historia {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 16px;
+    margin-top: 14px;
+    background: #f2c94c;
+    color: #17152f;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    transform: scale(1.02);
+}
+
+.boton.secundario {
+    background: #ffffff;
+}
+
+.final {
+    text-align: center;
+}
+
+.emoji {
+    font-size: 55px;
+    text-align: center;
+    margin: 10px;
+}
+
+.moraleja {
+    background: rgba(242,201,76,0.18);
+    border-left: 5px solid #f2c94c;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+.autor {
+    margin-top: 35px;
+    color: #bfc6d8;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div id="inicio" class="portada">
+    <div class="icono">🏛️✨</div>
+
+    <h1>El museo de las cosas que todavía no existen</h1>
+
+    <p class="subtitulo">
+        Una historia interactiva sobre la imaginación,
+        las preguntas y el valor de equivocarse.
+    </p>
+
+    <button class="boton" onclick="mostrar('puerta')">
+        🚪 Entrar al museo
+    </button>
+
+    <p class="autor">
+        Cuento infantil interactivo
+    </p>
+</div>
+
+
+<div id="puerta" class="oculto">
+    <div class="tarjeta">
+        <div class="emoji">🚪</div>
+
+        <h2>La puerta que apareció de la nada</h2>
+
+        <div class="historia">
+            <p>
+            Mara siempre tenía preguntas.
+            </p>
+
+            <p>
+            ¿Por qué las nubes no se caen?
+            ¿Por qué algunas personas tienen miedo de equivocarse?
+            ¿Y quién decide cuándo una idea es una buena idea?
+            </p>
+
+            <p>
+            Una tarde, mientras regresaba de la escuela,
+            descubrió algo extraño.
+            </p>
+
+            <p>
+            En una pared donde antes no había nada,
+            apareció una pequeña puerta azul.
+            </p>
+
+            <p>
+            En ella había una frase:
+            </p>
+
+            <p><strong>
+            “Entra solamente si alguna vez imaginaste algo
+            que nadie más pudo ver.”
+            </strong></p>
+
+            <p>
+            Mara sonrió.
+            </p>
+
+            <p>—Entonces sí puedo entrar.</p>
+        </div>
+
+        <button class="boton" onclick="mostrar('museo')">
+            🔑 Abrir la puerta
+        </button>
+
+        <button class="boton secundario" onclick="mostrar('casa')">
+            🏠 Seguir caminando
+        </button>
+    </div>
+</div>
+
+
+<div id="museo" class="oculto">
+    <div class="tarjeta">
+
+        <div class="emoji">🏛️🌟</div>
+
+        <h2>El museo imposible</h2>
+
+        <div class="historia">
+
+            <p>
+            Al abrir la puerta, Mara descubrió un enorme museo.
+            </p>
+
+            <p>
+            Pero no había pinturas famosas ni estatuas.
+            </p>
+
+            <p>
+            Había cosas que todavía no existían.
+            </p>
+
+            <p>
+            Un paraguas para caminar debajo del agua.
+            </p>
+
+            <p>
+            Un lápiz que dibujaba ideas.
+            </p>
+
+            <p>
+            Una mochila capaz de guardar recuerdos.
+            </p>
+
+            <p>
+            Y en el centro de la sala había un enorme reloj detenido.
+            </p>
+
+            <p>
+            Un hombre pequeño con sombrero apareció detrás de Mara.
+            </p>
+
+            <p>
+            —Llegas tarde.
+            </p>
+
+            <p>
+            —¿Tarde para qué? —preguntó Mara.
+            </p>
+
+            <p>
+            —Para imaginar.
+            </p>
+
+            <p>
+            En ese instante, una de las salas comenzó a desaparecer.
+            </p>
+
+            <p>
+            —El museo está desapareciendo —dijo el hombre—.
+            Solo alguien que todavía sepa hacerse preguntas puede salvarlo.
+            </p>
+
+        </div>
+
+        <button class="boton" onclick="mostrar('pregunta')">
+            ❓ Preguntar cómo salvarlo
+        </button>
+
+        <button class="boton secundario" onclick="mostrar('explorar')">
+            🔎 Explorar por mi cuenta
+        </button>
+
+    </div>
+</div>
+
+
+<div id="pregunta" class="oculto">
+    <div class="tarjeta">
+
+        <div class="emoji">📦💡</div>
+
+        <h2>La caja de las preguntas</h2>
+
+        <div class="historia">
+
+            <p>
+            El hombre llevó a Mara hasta una antigua caja de madera.
+            </p>
+
+            <p>
+            —Aquí están todas las preguntas que alguien tuvo miedo de hacer.
+            </p>
+
+            <p>
+            Mara abrió la caja.
+            </p>
+
+            <p>
+            No había papeles.
+            Había pequeñas luces.
+            </p>
+
+            <p>
+            Cada luz era una pregunta.
+            </p>
+
+            <p>
+            Una de ellas se acercó a Mara:
+            </p>
+
+            <p><strong>
+            “¿Y si me equivoco?”
+            </strong></p>
+
+            <p>
+            Mara la sostuvo entre sus manos.
+            </p>
+
+            <p>
+            Entonces comprendió que equivocarse no significaba fracasar.
+            A veces significaba encontrar un camino diferente.
+            </p>
+
+        </div>
+
+        <button class="boton" onclick="mostrar('semilla')">
+            🌱 Aceptar que puedo equivocarme
+        </button>
+
+        <button class="boton secundario" onclick="mostrar('otro')">
+            ❔ Hacer otra pregunta
+        </button>
+
+    </div>
+</div>
+
+
+<div id="semilla" class="oculto">
+    <div class="tarjeta">
+
+        <div class="emoji">🌱</div>
+
+        <h2>La semilla imposible</h2>
+
+        <div class="historia">
+
+            <p>
+            Mara llegó a una habitación completamente vacía.
+            </p>
+
+            <p>
+            En el suelo había una pequeña semilla.
+            </p>
+
+            <p>
+            —Esta es la última cosa que queda —dijo el hombre.
+            </p>
+
+            <p>
+            Mara tomó la semilla.
+            </p>
+
+            <p>
+            En la etiqueta podía leerse:
+            </p>
+
+            <p><strong>
+            “Esta semilla necesita algo más que agua para crecer.”
+            </strong></p>
+
+            <p>
+            Mara pensó durante unos segundos.
+            </p>
+
+            <p>
+            Entonces recordó todas las preguntas que había hecho
+            durante su vida.
+            </p>
+
+        </div>
+
+        <button class="boton" onclick="mostrar('final1')">
+            💭 Contarle una idea
+        </button>
+
+        <button class="boton secundario" onclick="mostrar('final2')">
+            💧 Darle agua
+        </button>
+
+    </div>
+</div>
+
+
+<div id="explorar" class="oculto">
+    <div class="tarjeta">
+
+        <div class="emoji">🌀</div>
+
+        <h2>La sala de las posibilidades</h2>
+
+        <div class="historia">
+
+            <p>
+            Mara decidió explorar sin pedir ayuda.
+            </p>
+
+            <p>
+            Abrió una puerta y encontró cientos de caminos.
+            </p>
+
+            <p>
+            Cada camino mostraba una posibilidad diferente:
+            convertirse en astronauta, inventar una máquina,
+            pintar un cuadro o escribir una historia.
+            </p>
+
+            <p>
+            Mara comprendió que tener muchas posibilidades
+            también puede resultar confuso.
+            </p>
+
+            <p>
+            Cerró los ojos y eligió una sola.
+            </p>
+
+        </div>
+
+        <button class="boton" onclick="mostrar('final3')">
+            ⭐ Elegir mi propio camino
+        </button>
+
+    </div>
+</div>
+
+
+<div id="casa" class="oculto">
+    <div class="tarjeta">
+
+        <div class="emoji">🐦</div>
+
+        <h2>Una pequeña decisión</h2>
+
+        <div class="historia">
+
+            <p>
+            Mara decidió seguir caminando.
+            </p>
+
+            <p>
+            Pero antes de llegar a casa escuchó un pequeño sonido.
+            </p>
+
+            <p>
+            Era un pajarito que tenía un ala atrapada entre unas ramas.
+            </p>
+
+            <p>
+            Mara pudo continuar su camino.
+            Sin embargo, decidió detenerse y ayudarlo.
+            </p>
+
+            <p>
+            Cuando el pajarito quedó libre, dejó caer una pequeña pluma brillante.
+            </p>
+
+            <p>
+            En ella había una frase:
+            </p>
+
+            <p><strong>
+            “Las grandes historias también comienzan con pequeños actos.”
+            </strong></p>
+
+        </div>
+
+        <button class="boton" onclick="mostrar('final4')">
+            ✨ Guardar la pluma
+        </button>
+
+    </div>
+</div>
+
+
+<div id="otro" class="oculto">
+    <div class="tarjeta">
+
+        <div class="emoji">🔮</div>
+
+        <h2>La pregunta que faltaba</h2>
+
+        <div class="historia">
+
+            <p>
+            Mara pensó en muchas preguntas.
+            </p>
+
+            <p>
+            Pero finalmente hizo una diferente:
+            </p>
+
+            <p><strong>
+            —¿Qué pasaría si no tuviera miedo de intentar?
+            </strong></p>
+
+            <p>
+            El museo entero comenzó a iluminarse.
+            </p>
+
+            <p>
+            El hombre del sombrero sonrió.
+            </p>
+
+            <p>
+            —Esa era la pregunta que estábamos esperando.
+            </p>
+
+        </div>
+
+        <button class="boton" onclick="mostrar('final1')">
+            🌟 Continuar
+        </button>
+
+    </div>
+</div>
+
+
+<div id="final1" class="oculto">
+    <div class="tarjeta final">
+
+        <div class="emoji">🌳✨</div>
+
+        <h2>Final: La imaginación despierta</h2>
+
+        <div class="historia">
+
+            <p>
+            Mara cerró los ojos.
+            </p>
+
+            <p>
+            —Tengo miedo de equivocarme —dijo—,
+            pero también tengo ganas de intentarlo.
+            </p>
+
+            <p>
+            La semilla comenzó a brillar.
+            </p>
+
+            <p>
+            🌱 De la tierra nació una pequeña planta.
+            Luego otra. Y otra.
+            </p>
+
+            <p>
+            El museo recuperó sus colores.
+            </p>
+
+            <p>
+            El reloj volvió a funcionar.
+            </p>
+
+            <p>
+            —Lo lograste —dijo el hombre.
+            </p>
+
+            <p>
+            —¿Porque encontré la respuesta?
+            </p>
+
+            <p>
+            —No. Porque aprendiste a hacer otra pregunta.
+            </p>
+
+        </div>
+
+        <div class="moraleja">
+            <strong>🌟 Moraleja</strong><br><br>
+            No debemos tener miedo de equivocarnos.
+           
