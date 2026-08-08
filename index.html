@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La puerta misteriosa</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #dff6ff, #fff3d6);
+    color: #3b2a20;
+}
+
+.contenedor {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+}
+
+.cuento {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #7b4b2a;
+    font-size: 34px;
+}
+
+h2 {
+    color: #9b633c;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.escena {
+    display: none;
+}
+
+.escena.activa {
+    display: block;
+}
+
+button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 15px;
+    background: #7b4b2a;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #54331e;
+}
+
+.final {
+    text-align: center;
+    font-size: 24px;
+    color: #7b4b2a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div class="cuento">
+
+<h1>🚪 La puerta misteriosa</h1>
+
+<div class="escena activa" id="escena1">
+
+<h2>Un viaje inesperado</h2>
+
+<p>
+Una tarde tranquila, Juan y Juana decidieron salir de viaje en su carro.
+Querían disfrutar del paisaje y pasar un día juntos lejos de la ciudad.
+</p>
+
+<p>
+Mientras avanzaban por una carretera rodeada de árboles, comenzaron a notar que el camino estaba cada vez más silencioso.
+</p>
+
+<button onclick="mostrar(2)">Continuar</button>
+
+</div>
+
+
+<div class="escena" id="escena2">
+
+<h2>La extraña puerta</h2>
+
+<p>
+De repente, Juan frenó el carro.
+Frente a ellos había algo que ninguno de los dos esperaba encontrar:
+una enorme puerta de madera en medio del camino.
+</p>
+
+<p>
+—¿Qué hace una puerta aquí? —preguntó Juana sorprendida.
+</p>
+
+<p>
+Juan bajó del carro y se acercó lentamente.
+La puerta parecía muy antigua, pero tenía una pequeña luz brillando alrededor.
+</p>
+
+<button onclick="mostrar(3)">Abrir la puerta</button>
+
+</div>
+
+
+<div class="escena" id="escena3">
+
+<h2>Un mundo diferente</h2>
+
+<p>
+Juan tomó la mano de Juana y juntos abrieron la puerta.
+</p>
+
+<p>
+Al otro lado encontraron un hermoso lugar lleno de flores, árboles enormes y pequeñas luces que parecían estrellas.
+</p>
+
+<p>
+—¡Nunca había visto un lugar así! —dijo Juana con una sonrisa.
+</p>
+
+<p>
+Los dos caminaron lentamente, maravillados por todo lo que encontraban.
+</p>
+
+<button onclick="mostrar(4)">Seguir caminando</button>
+
+</div>
+
+
+<div class="escena" id="escena4">
+
+<h2>¡Ayuda!</h2>
+
+<p>
+De pronto, escucharon un fuerte ruido detrás de ellos.
+</p>
+
+<p>
+<strong>¡CRAAASH!</strong>
+</p>
+
+<p>
+La puerta comenzó a cerrarse lentamente.
+</p>
+
+<p>
+—¡Juan, tenemos que regresar! —gritó Juana.
+</p>
+
+<p>
+Los dos corrieron tan rápido como pudieron.
+</p>
+
+<button onclick="mostrar(5)">Correr hacia la puerta</button>
+
+</div>
+
+
+<div class="escena" id="escena5">
+
+<h2>De regreso</h2>
+
+<p>
+Juan tomó la mano de Juana y ambos lograron atravesar la puerta justo antes de que se cerrara.
+</p>
+
+<p>
+Cuando miraron hacia atrás, la puerta había desaparecido.
+Solo quedaba el camino tranquilo frente a ellos.
+</p>
+
+<p>
+Los dos regresaron al carro y continuaron su viaje.
+</p>
+
+<p>
+—Creo que nadie nos va a creer lo que acabamos de vivir —dijo Juan riendo.
+</p>
+
+<button onclick="mostrar(6)">Continuar</button>
+
+</div>
+
+
+<div class="escena" id="escena6">
+
+<h2>🌟 Un recuerdo inolvidable</h2>
+
+<p>
+Desde aquel día, Juan y Juana nunca volvieron a encontrar aquella misteriosa puerta.
+</p>
+
+<p>
+Sin embargo, cada vez que viajaban juntos recordaban aquella aventura y sonreían.
+</p>
+
+<p class="final">
+✨ Y así comprendieron que los mejores viajes no siempre son los que tienen un destino, sino los que se convierten en recuerdos para toda la vida. ✨
+</p>
+
+<h2 class="final">FIN ❤️</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function mostrar(numero) {
+
+    let escenas = document.querySelectorAll(".escena");
+
+    escenas.forEach(function(escena) {
+        escena.classList.remove("activa");
+    });
+
+    document.getElementById("escena" + numero)
+    .classList.add("activa");
+}
+
+</script>
+
+</body>
+</html>
